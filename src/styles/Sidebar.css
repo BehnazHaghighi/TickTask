@@ -1,0 +1,18 @@
+/* Sidebar.css */
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height on all devices */
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.app-logo {
+  max-width: 100%;
+  height: auto; /* Ensure the image scales properly */
+}

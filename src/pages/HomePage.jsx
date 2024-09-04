@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import appLogo from '../assets/images/AppImage.jpg';
-import Header from '../components/Header';
+// import Sidebar from '../components/Sidebar';
+import './../styles/HomePage.css';
+import appLogo from '../assets/images/AppImage2.jpg';
 
 const HomePage = () => {
+  useEffect(() => {
+    document.body.classList.add('homepage');
+    document.body.style.backgroundImage = `url(${appLogo})`;
+
+    return () => {
+      document.body.classList.remove('homepage');
+      document.body.style.backgroundImage = '';
+    };
+  }, []);
+
   return (
     <div className="home-page">
-      <Header />
+      {/* <Sidebar /> */}
       <div className="welcome-section">
         <h1>Welcome to TickTask</h1>
         <p>Your Personal Task Manager</p>
