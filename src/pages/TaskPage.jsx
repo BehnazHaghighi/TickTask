@@ -4,10 +4,12 @@ import TaskInput from '../components/TaskInput';
 import TaskList from '../components/TaskList';
 import CategoryInput from '../components/CategoryInput';
 import CategoryList from '../components/CategoryList';
+import TaskReport from '../components/TaskReport'; // Import the TaskReport component
 import { loadTasks, saveTasks, addNewTask, removeTask, toggleTaskCompletion } from '../utils/taskStorage';
 import { loadCategories, saveCategories, addNewCategory, removeCategory, updateCategory } from '../utils/categoryStorage';
 import Footer from '../components/Footer';
 import '../styles/TaskPage.css';
+import '../styles/Components.css';
 
 const TaskPage = () => {
   const [tasks, setTasks] = useState([]);
@@ -67,25 +69,28 @@ const TaskPage = () => {
       <main className="app-main">
         <div className="task-category-container">
           <div className="category-column">
-            <CategoryInput 
-              onAddCategory={handleAddCategory} 
-              onEditCategory={handleUpdateCategory} 
-              editingCategory={editingCategory} 
+            <CategoryInput
+              onAddCategory={handleAddCategory}
+              onEditCategory={handleUpdateCategory}
+              editingCategory={editingCategory}
             />
-            <CategoryList 
-              categories={categories} 
-              onDeleteCategory={handleDeleteCategory} 
-              onEditCategory={handleEditCategory} 
+            <CategoryList
+              categories={categories}
+              onDeleteCategory={handleDeleteCategory}
+              onEditCategory={handleEditCategory}
             />
           </div>
           <div className="task-column">
             <TaskInput onAddTask={handleAddTask} categories={categories} />
-            <TaskList 
-              tasks={tasks} 
-              categories={categories} 
-              onDeleteTask={handleDeleteTask} 
-              onToggleTaskCompletion={handleToggleTaskCompletion} 
+            <TaskList
+              tasks={tasks}
+              categories={categories}
+              onDeleteTask={handleDeleteTask}
+              onToggleTaskCompletion={handleToggleTaskCompletion}
             />
+          </div>
+          <div className="report-column">
+            <TaskReport tasks={tasks} />
           </div>
         </div>
       </main>
