@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 const CategoryInput = ({ onAddCategory, onEditCategory, editingCategory }) => {
   const [categoryName, setCategoryName] = useState(editingCategory ? editingCategory.name : '');
@@ -22,7 +24,12 @@ const CategoryInput = ({ onAddCategory, onEditCategory, editingCategory }) => {
         placeholder="Enter category name"
         required
       />
-      <button type="submit">{editingCategory ? 'Update' : 'Add'} Category</button>
+      <button 
+        type="submit" 
+        className={editingCategory ? 'edit-btn' : 'add-btn'} /* Toggle class - based on edit or add state */
+      >
+        <FontAwesomeIcon icon={editingCategory ? faEdit : faPlus} />
+      </button>
     </form>
   );
 };

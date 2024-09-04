@@ -1,0 +1,44 @@
+/* Add Button */
+.add-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #0095ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.add-btn:hover {
+    background-color: #0095ff;
+    color: white;
+}
+
+/* Edit Button */
+.edit-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #fd7e14;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.edit-btn:hover {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.edit-icon {
+    color: #fd7e14;
+}
+
+/* Delete Icon */
+.delete-icon {
+    color: #dc3545;
+}
+
+.delete-icon:hover {
+    color: #c82333;
+}

@@ -1,5 +1,6 @@
-
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const TaskInput = ({ onAddTask, categories }) => {
   const [newTask, setNewTask] = useState('');
@@ -14,8 +15,8 @@ const TaskInput = ({ onAddTask, categories }) => {
 
     if (newTask.trim()) {
       onAddTask(newTask, selectedCategory);
-      setNewTask(''); // Clear the input field
-      setSelectedCategory(''); // Clear the selected category
+      setNewTask('');
+      setSelectedCategory('');
     }
   };
 
@@ -37,7 +38,9 @@ const TaskInput = ({ onAddTask, categories }) => {
           <option key={category.id} value={category.id}>{category.name}</option>
         ))}
       </select>
-      <button type="submit">Add Task</button>
+      <button type="submit" className="add-btn">
+        <FontAwesomeIcon icon={faPlus} />
+      </button>
     </form>
   );
 };

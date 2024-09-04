@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const CategoryList = ({ categories, onDeleteCategory, onEditCategory }) => {
   return (
@@ -8,8 +10,12 @@ const CategoryList = ({ categories, onDeleteCategory, onEditCategory }) => {
         {categories.map(category => (
           <li key={category.id}>
             {category.name}
-            <button onClick={() => onEditCategory(category)}>Edit</button>
-            <button onClick={() => onDeleteCategory(category.id)}>Delete</button>
+            <button onClick={() => onEditCategory(category)}>
+              <FontAwesomeIcon icon={faEdit} className="edit-icon" /> 
+            </button>
+            <button onClick={() => onDeleteCategory(category.id)}>
+              <FontAwesomeIcon icon={faTrash} className="delete-icon" /> 
+            </button>
           </li>
         ))}
       </ul>

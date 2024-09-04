@@ -1,6 +1,6 @@
-// src/components/TaskList.jsx
-
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const TaskList = ({ tasks, categories, onDeleteTask, onToggleTaskCompletion }) => {
 
@@ -25,7 +25,9 @@ const TaskList = ({ tasks, categories, onDeleteTask, onToggleTaskCompletion }) =
             />
             <span className="task-name">{task.name}</span>
             <span className="task-category">({getCategoryName(task.categoryId)})</span>
-            <button className="task-delete" onClick={() => onDeleteTask(task.id)}>Delete</button>
+            <button className="task-delete" onClick={() => onDeleteTask(task.id)}>
+              <FontAwesomeIcon icon={faTrash} className="delete-icon" /> 
+            </button>
           </li>
         ))}
       </ul>
@@ -43,7 +45,9 @@ const TaskList = ({ tasks, categories, onDeleteTask, onToggleTaskCompletion }) =
                 />
                 <span className="task-name">{task.name}</span>
                 <span className="task-category">({getCategoryName(task.categoryId)})</span>
-                <button className="task-delete" onClick={() => onDeleteTask(task.id)}>Delete</button>
+                <button className="task-delete" onClick={() => onDeleteTask(task.id)}>
+                  <FontAwesomeIcon icon={faTrash} className="delete-icon" /> 
+                </button>
               </li>
             ))}
           </ul>
