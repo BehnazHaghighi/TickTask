@@ -1,0 +1,20 @@
+.app-footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #f3f3f35e
+}
+
+.home-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+}
+
+.home-button:hover {
+    background-color: #ab95e3;
+    transform: scale(1.05);
+}

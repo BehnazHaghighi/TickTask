@@ -1,21 +1,23 @@
-
 .app-header {
-    text-align: center;
-    padding: 20px;
-    background: rgb(255 255 255 / 19%);
-    border-bottom: 1px solid rgb(255 255 255 / 15%);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 12px rgb(0 0 0 / 0%);
-    color: white;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .app-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: var(--font);
-    color: white;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2); 
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background: rgb(255 255 255 / 19%);
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0%);
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.app-header-link {
+  text-decoration: none;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font);
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
