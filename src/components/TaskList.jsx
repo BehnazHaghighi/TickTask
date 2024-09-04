@@ -43,7 +43,7 @@ const TaskList = ({ tasks, categories, onDeleteTask, onToggleTaskCompletion }) =
                   checked={task.completed} 
                   onChange={() => onToggleTaskCompletion(task.id)} 
                 />
-                <span className="task-name">{task.name}</span>
+                <span className="task-name-completed">{task.name}</span>
                 <span className="task-category">({getCategoryName(task.categoryId)})</span>
                 <button className="task-delete" onClick={() => onDeleteTask(task.id)}>
                   <FontAwesomeIcon icon={faTrash} className="delete-icon" /> 

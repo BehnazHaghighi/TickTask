@@ -22,14 +22,8 @@ const TaskInput = ({ onAddTask, categories }) => {
 
   return (
     <form className="new-task" onSubmit={handleSubmit}>
-      <input 
-        type="text" 
-        placeholder="Enter a new task..." 
-        value={newTask} 
-        onChange={(e) => setNewTask(e.target.value)} 
-      />
-      <select 
-        value={selectedCategory} 
+      <select
+        value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
         required
       >
@@ -38,7 +32,12 @@ const TaskInput = ({ onAddTask, categories }) => {
           <option key={category.id} value={category.id}>{category.name}</option>
         ))}
       </select>
-      <button type="submit" className="add-btn">
+      <input
+        type="text"
+        placeholder="Enter a new task..."
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
+      />      <button type="submit" className="add-btn">
         <FontAwesomeIcon icon={faPlus} />
       </button>
     </form>
