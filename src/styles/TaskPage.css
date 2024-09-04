@@ -10,7 +10,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; 
   padding: 20px;
+  width: 100%;
 }
 
 .task-category-container {
@@ -18,9 +20,10 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
-.category-column, .task-column {
+.category-column, .task-column, .report-column {
   flex: 1;
   margin: 0 10px;
 }
@@ -73,14 +76,15 @@
   cursor: pointer;
 }
 
-
-
 .report-column {
+  font-size: 14px;
+  color: white;
   max-width: 300px;
-  background-color: #f8f9fa;
+  background-color: #ab95e3;
   border-radius: 5px;
   padding: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
 }
 
 .task-report h2 {

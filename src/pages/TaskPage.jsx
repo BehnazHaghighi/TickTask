@@ -4,7 +4,8 @@ import TaskInput from '../components/TaskInput';
 import TaskList from '../components/TaskList';
 import CategoryInput from '../components/CategoryInput';
 import CategoryList from '../components/CategoryList';
-import TaskReport from '../components/TaskReport'; // Import the TaskReport component
+import TaskReport from '../components/TaskReport';
+import Header from '../components/Header';
 import { loadTasks, saveTasks, addNewTask, removeTask, toggleTaskCompletion } from '../utils/taskStorage';
 import { loadCategories, saveCategories, addNewCategory, removeCategory, updateCategory } from '../utils/categoryStorage';
 import Footer from '../components/Footer';
@@ -66,6 +67,7 @@ const TaskPage = () => {
 
   return (
     <div className="task-page">
+      <Header />
       <main className="app-main">
         <div className="task-category-container">
           <div className="category-column">
