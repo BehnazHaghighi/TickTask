@@ -24,9 +24,9 @@ const CategoryInput = ({ onAddCategory, onEditCategory, editingCategory }) => {
         placeholder="Enter category name"
         required
       />
-      <button 
-        type="submit" 
-        className={editingCategory ? 'edit-btn' : 'add-btn'} /* Toggle class - based on edit or add state */
+      <button
+        type="submit"
+        className={editingCategory ? 'edit-btn' : 'add-btn'}
       >
         <FontAwesomeIcon icon={editingCategory ? faEdit : faPlus} />
       </button>

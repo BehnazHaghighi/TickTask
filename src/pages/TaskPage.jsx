@@ -11,6 +11,7 @@ import { loadCategories, saveCategories, addNewCategory, removeCategory, updateC
 import Footer from '../components/Footer';
 import '../styles/TaskPage.css';
 import '../styles/Components.css';
+import '../styles/TaskPageResponsive.css';
 
 const TaskPage = () => {
   const [tasks, setTasks] = useState([]);

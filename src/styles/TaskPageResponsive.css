@@ -1,0 +1,150 @@
+@media (max-width: 1024px) {
+    .task-category-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .category-column,
+    .task-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-input,
+    .new-task {
+        margin-bottom: 20px;
+    }
+
+    .category-list,
+    .task-list {
+        margin-top: 0;
+    }
+
+    .category-column,
+    .task-column,
+    .report-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .app-main {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .report-column {
+        max-width: 93%;
+    }
+}
+
+@media (max-width: 768px) {
+    .task-category-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .category-column,
+    .task-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-input,
+    .new-task {
+        margin-bottom: 20px;
+    }
+
+    .category-list,
+    .task-list {
+        margin-top: 0;
+    }
+
+    .category-input input,
+    .new-task input,
+    .new-task select {
+        width: 80%;
+        margin-right: 10px;
+    }
+
+    .app-main {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .task-page {
+        padding: 0 10px;
+    }
+
+    .task-list li,
+    .category-list li {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .task-list li input[type="checkbox"],
+    .category-list li input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .task-list li.completed {
+        background-color: #d6f5e3;
+    }
+
+    .add-btn,
+    .edit-btn {
+        padding: 8px 16px;
+    }
+
+    .report-column {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .task-category-container {
+        padding: 0 5px;
+    }
+
+
+    .category-column,
+    .task-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category-input,
+    .new-task {
+        margin-bottom: 20px;
+    }
+
+    .category-list,
+    .task-list {
+        margin-top: 0;
+    }
+
+    .category-input input,
+    .new-task input,
+    .new-task select {
+        width: 80%;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .task-list li,
+    .category-list li {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .task-list li.completed {
+        background-color: #c1f0d4;
+    }
+
+    .report-column {
+        font-size: 11px;
+        padding: 8px;
+    }
+}

@@ -4,13 +4,13 @@
 * {
   box-sizing: border-box;
   outline: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 :root {
   --font: 'DM Sans', sans-serif;
 }
 
-/* Gradient Background (default for all pages except homepage) */
 body {
   min-height: 100vh;
   margin: 0;
@@ -23,7 +23,6 @@ body {
 
 body.homepage {
   background-image: none;
-  /* Remove the gradient */
   background-size: cover;
   background-position: center;
 }
@@ -31,8 +30,4 @@ body.homepage {
 img {
   height: 100%;
   width: auto;
-}
-
-* {
-  transition: all 0.3s ease-in-out;
 }

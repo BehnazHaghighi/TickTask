@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import Sidebar from '../components/Sidebar';
 import './../styles/HomePage.css';
 import appLogo from '../assets/images/AppImage2.jpg';
 
@@ -17,7 +16,6 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      {/* <Sidebar /> */}
       <div className="welcome-section">
         <h1>Welcome to TickTask</h1>
         <p>Your Personal Task Manager</p>
